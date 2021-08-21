@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--orangeDark: #d65a31;
+	--orangeLight: #de9d88;
+	--containerColor: #222831;
+}
+
+body {
+	background: #393e46;
+	color: white;
+}
+
+app-bar h2 {
+	background: var(--containerColor);
+	color: var(--orangeDark);
+}
+
+search-bar form {
+	background: var(--containerColor);
+}
+
+search-bar input {
+	background: var(--containerColor);
+	color: var(--orangeLight);
+}
+
+search-bar button {
+	background: var(--orangeDark);
+}
+
+meal-item article {
+	background: var(--containerColor);
+}
+
+meal-item h4 {
+	color: var(--orangeLight);
+}
+
+meal-list h2 {
+	color: var(--orangeLight);
+}
