@@ -7,8 +7,10 @@ class MealItem extends HTMLElement {
 
 	render() {
 		this.innerHTML = `
-		<article class="rounded-md my-3 mx-2 md:mx-auto shadow-lg md:w-7/12">
-			<img src="${this._meal.strMealThumb}" class="rounded-t-md max-h-96 w-full object-cover" alt="${this._meal.strMeal}">
+		<article class="rounded-md my-3 mx-2 md:mx-auto shadow-lg md:w-10/12 md:flex md:flex-row">
+			<img src="${this._meal.strMealThumb}" 
+			class="rounded-t-md max-h-96 w-full object-cover 
+			md:max-h-full md:max-w-lg md:rounded-l-md md:rounded-t-none" alt="${this._meal.strMeal}">
 			<div class="p-7">
 				<h4 class="font-bold text-lg">${this._meal.strMeal}</h4>
 				<p>${this._meal.strInstructions}</p>
@@ -19,7 +21,9 @@ class MealItem extends HTMLElement {
 		</article>
         `;
 
-		const ingredientContainerElement = this.querySelector("#ingredients-container");
+		const ingredientContainerElement = this.querySelector(
+			"#ingredients-container"
+		);
 		const ingredients = this.getIngredients();
 		const measures = this.getMeasures();
 		for (let i in ingredients) {
