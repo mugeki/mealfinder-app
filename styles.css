@@ -650,8 +650,38 @@ meal-list h2 {
     margin-right: auto;
   }
 
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:max-h-full {
+    max-height: 100%;
+  }
+
   .md\:w-7\/12 {
     width: 58.333333%;
+  }
+
+  .md\:w-10\/12 {
+    width: 83.333333%;
+  }
+
+  .md\:max-w-lg {
+    max-width: 32rem;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:rounded-t-none {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+
+  .md\:rounded-l-md {
+    border-top-left-radius: 0.375rem;
+    border-bottom-left-radius: 0.375rem;
   }
 }
 
