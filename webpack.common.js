@@ -22,7 +22,17 @@ module.exports = {
 		}),
 		new PurgeCSSPlugin({
 			paths: glob.sync(`${PATHS.src}/**/*`, { nodir: true }),
-			safelist: ["md:mx-auto", "md:w-7/12"],
+			safelist: [
+				"md:mx-auto",
+				"md:w-7/12",
+				"md:w-10/12",
+				"md:max-h-full",
+				"md:max-w-lg",
+				"md:rounded-l-md",
+				"md:rounded-t-none",
+				"md:flex",
+				"md:flex-row",
+			],
 		}),
 	],
 };
